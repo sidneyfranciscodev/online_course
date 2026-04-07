@@ -1,0 +1,10 @@
+<header>
+    <nav data-controller="auth" class="admin">
+        <h1>Admin</h1>
+        <div>
+            <a class="link" href="{{ url_for('admin_dashboard') }}">Painel</a>
+            
+            <button data-action="auth#logout">Logout</button>
+        </div>
+    </nav>
+</header>

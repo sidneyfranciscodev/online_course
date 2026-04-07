@@ -1,0 +1,49 @@
+@import '../base/variables.css';
+
+.auth,
+.auth form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth {
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: var(--white);
+}
+
+.auth h1 {
+    font-size: 2.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.auth form {
+    padding: 3rem 3rem;
+}
+
+.auth form label {
+    margin: 0.6rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.auth form .input {
+    border-radius: 3px;
+    padding: 0.39rem 3rem;
+}
+
+.auth form .button {
+    margin-top: 1.8rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .auth form {
+        box-shadow: 2px 2px 5px var(--border);
+        padding: 6rem;
+    }
+}

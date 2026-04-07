@@ -1,0 +1,10 @@
+@import 'base/globals.css';
+
+@import 'components/navbar.css';
+@import 'components/footer.css';
+
+@import 'legal/templates.css';
+
+@import 'auth/auth.css';
+
+@import 'admin/admin.css';

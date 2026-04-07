@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <div class="auth">
+        <form data-controller="auth" data-action="submit->auth#{{ mode }}">
+            <h1>{{ title }}</h1>
+            <label for="email">Email</label>
+            <input id="email"  type="email" class="input" data-auth-target="email" required>
+            <label for="password">Password</label>
+            <input id="password" type="password" class="input" data-auth-target="password" required>
+            
+            {% if mode == 'register' %}
+                <div class="terms">
+                    <label for="terms">Agree to Terms</label>
+                    <input id="terms" type="checkbox" required>
+                </div>
+            {% endif %}
+            
+            <input type="submit" class="button" value="Login">
+        
+            {% if mode == 'login' %}
+                <p>Nao tem uma conta? <a href="/auth/register">Cadastrar</a></p>
+            {% else %}
+                <p>Ja tem uma conta? <a href="/auth/login">Login</a></p>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}

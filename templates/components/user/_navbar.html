@@ -1,0 +1,13 @@
+<nav class="public">
+    <div class="content">
+        <div id="navigation">
+            <ul>
+                <li><a class="link" href="{{ url_for('app_auth') }}">Inicio</a></li>
+            </ul>
+        </div>
+        <div id="action">
+            <a class="link" href="{{ url_for('app_auth') }}">Definicoes</a>
+            <button data-action="auth#logout">Terminar Sessao</button>
+        </div>
+    </div>
+</nav>
