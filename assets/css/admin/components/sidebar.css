@@ -1,0 +1,30 @@
+#admin aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem 1.2rem;
+    width: 12%;
+    background-color: var(--dark);
+}
+
+#admin aside a {
+    text-decoration: none;
+}
+
+#admin aside a,
+#admin aside small {
+    color: var(--white);
+}
+
+#admin aside .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2.1rem;
+}
+
+#admin aside .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}

@@ -2,10 +2,12 @@
 
 {% block title %}Admin{% endblock %}
 
-{% block nav %}
-    {% include "components/admin/_navbar.html" %}
-{% endblock %}
-
-{% block footer %}
-    {% include "components/admin/_footer.html" %}
+{% block body %}
+    <div id="admin">
+        {% include "components/admin/_sidebar.html" %}
+        <div class="container">
+            {% include "components/admin/_navbar.html" %}
+            {% block view %}{% endblock %}
+        </div>
+    </div>
 {% endblock %}

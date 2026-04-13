@@ -1,0 +1,15 @@
+@import '../base/variables.css';
+
+nav {
+    background-color: var(--light);
+    padding: 0.6rem 1.2rem;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+}
+
+nav a { text-decoration: none; }
+
+nav h1 { margin: 0;}

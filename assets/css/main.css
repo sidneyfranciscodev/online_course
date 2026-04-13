@@ -1,6 +1,6 @@
 @import 'base/globals.css';
 
-@import 'base/navbar.css';
+@import 'base/nav.css';
 @import 'base/footer.css';
 
 @import 'auth/auth.css';

@@ -1,12 +1,12 @@
-<div id="sidebar">
-    <section class="links">
-        <a href="{{ url_for('admin_dashboard') }}">Dashboard</a>
-        <a href="{{ url_for('admin_users') }}">Users</a>
-        <a href="{{ url_for('admin_modules') }}">Modules</a>
-        <a href="{{ url_for('admin_lessons') }}">Lessons</a>
-    </section>
-    <section id="footer-sidebar">
-        <a href="{{ url_for('admin_settings') }}">Settings</a>
-        <p>copyrights &copy; 2023 Your Company. All rights reserved.</p>
-    </section>
-</div>
+<aside id="sidebar">
+    <div class="links">
+        <a href="{{ url_for('admin_dashboard') }}">Painel</a>
+        <a href="{{ url_for('admin_users') }}">Usuários</a>
+        <a href="{{ url_for('admin_modules') }}">Módulos</a>
+        <a href="{{ url_for('admin_lessons') }}">Lições</a>
+    </div>
+    <div class="footer">
+        <a href="{{ url_for('admin_settings') }}">Configurações</a>
+        <small>&copy; 2025 NULL systems.</small>
+    </div>
+</aside>

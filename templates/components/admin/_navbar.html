@@ -1,11 +1,12 @@
-<header>
-    <nav data-controller="auth" class="admin">
+<nav data-controller="auth">
+    <div class="content">
         <h1>Administração</h1>
-        <button class="dropdown">
+
+        <div class="dropdown">
             <div class="list">
                 <span>{#{ admin.name }#}nome</span>
                 <button data-action="auth#logout">terminar sessão</button>
-            </div>            
-        </button>
-    </nav>
-</header>
+            </div>
+        </div>
+    </div>
+</nav>
