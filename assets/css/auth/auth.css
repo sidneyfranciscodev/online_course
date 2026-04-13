@@ -17,10 +17,12 @@
     font-size: 2.1rem;
     margin-top: 0;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .auth form {
-    padding: 3rem 3rem;
+    padding: 3rem;
+    box-shadow: 2px 2px 5px var(--border);
 }
 
 .auth form label {
@@ -41,9 +43,12 @@
     font-weight: bold;
 }
 
+.auth form .terms {
+    padding: 0.6rem 0;
+}
+
 @media (min-width: 768px) {
     .auth form {
-        box-shadow: 2px 2px 5px var(--border);
         padding: 6rem;
     }
 }

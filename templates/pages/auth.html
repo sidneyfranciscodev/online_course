@@ -3,7 +3,7 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
-    <div class="auth">
+    <div id="{{ mode }}" class="auth">
         <form data-controller="auth" data-action="submit->auth#{{ mode }}">
             <h1>{{ title }}</h1>
             <label for="email">Email</label>
@@ -21,9 +21,9 @@
             <input type="submit" class="button" value="Login">
         
             {% if mode == 'login' %}
-                <p>Nao tem uma conta? <a href="/auth/register">Cadastrar</a></p>
+                <p>Nao tem uma conta? <a href="{{ url_for('app_register') }}">cadastre-se</a></p>
             {% else %}
-                <p>Ja tem uma conta? <a href="/auth/login">Login</a></p>
+                <p>Ja tem uma conta? <a href="{{ url_for('app_login') }}">login</a></p>
             {% endif %}
         </form>
     </div>

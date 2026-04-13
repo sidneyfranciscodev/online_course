@@ -1,6 +1,6 @@
 from fastapi import Request, Depends
 from fastapi.routing import APIRouter
-from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 import src.core.firebase_auth as auth
 
@@ -10,7 +10,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory=TEMPLATES_DIR)
 
 
-@router.get("/auth/login", name='app_auth', response_class=HTMLResponse)
+@router.get("/auth/login", name='app_login', response_class=HTMLResponse)
 def login(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/auth.html',
@@ -22,7 +22,7 @@ def login(request: Request) -> HTMLResponse:
         request=request
     )
 
-@router.get("/auth/cadastrar", response_class=HTMLResponse)
+@router.get("/auth/registar", name='app_register', response_class=HTMLResponse)
 def register(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/auth.html',
@@ -59,3 +59,11 @@ def logout() -> JSONResponse:
     response.delete_cookie("__SESSION")
 
     return response
+
+
+# Still reviewing the user creation process, as it may be better to handle it on the client side using Firebase SDKs, which provide a more seamless experience and better error handling for user registration.
+# @router.post("/auth/user/create")
+# def create_user(user: dict) -> JSONResponse:
+#    auth.create_user(email=user.email, password=user.password)
+    
+#    return RedirectResponse(url="/auth/login", status_code=302)
