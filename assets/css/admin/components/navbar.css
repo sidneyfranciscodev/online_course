@@ -1,0 +1,33 @@
+@import '../base/variables.css';
+
+/** For Admin **/
+header.admin {
+    background-color: var(--light);
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+nav.admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+nav.admin a {
+    padding: 0.6rem 1rem;
+}
+
+@media (min-width: 768px) {
+    nav.admin {
+        padding: 0.6rem 0.3rem;
+    }
+    
+    nav.admin .content {
+        justify-content: space-between;
+    }
+
+    nav.admin a {
+        padding: 0.9rem;
+    }
+}

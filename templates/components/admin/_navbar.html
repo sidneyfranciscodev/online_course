@@ -1,10 +1,11 @@
 <header>
     <nav data-controller="auth" class="admin">
-        <h1>Admin</h1>
-        <div>
-            <a class="link" href="{{ url_for('admin_dashboard') }}">Painel</a>
-            
-            <button data-action="auth#logout">Logout</button>
-        </div>
+        <h1>Administração</h1>
+        <button class="dropdown">
+            <div class="list">
+                <span>{#{ admin.name }#}nome</span>
+                <button data-action="auth#logout">terminar sessão</button>
+            </div>            
+        </button>
     </nav>
 </header>
