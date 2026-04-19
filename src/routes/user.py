@@ -10,7 +10,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory=TEMPLATES_DIR)
 
 @router.get(
-    "/user/dashboard",
+    "/usuario",
     name="user_dashboard",
     response_class=HTMLResponse
 )
@@ -24,7 +24,7 @@ def dashboard(
     )
 
 @router.get(
-    "/user/{module}",
+    "/usuario/{module}",
     name="user_module",
     response_class=HTMLResponse
 )
@@ -40,7 +40,7 @@ def module(
     )
 
 @router.get(
-    "/user/{module}/{lesson}",
+    "/usuario/{module}/{lesson}",
     name="user_lesson",
     response_class=HTMLResponse
 )

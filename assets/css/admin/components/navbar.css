@@ -1,4 +1,4 @@
-@import '../base/variables.css';
+@import '../../base/variables.css';
 
 #admin nav {
     background-color: var(--light);

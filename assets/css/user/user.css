@@ -1,5 +1,4 @@
 @import '../base/variables.css';
-@import 'components/navbar.css';
 
 #user { min-height: 100dvh; }
 
@@ -8,6 +7,36 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 25vh;
+    min-height: 25vh;
     background-color: var(--light);
+}
+
+#user main h2 {
+    margin: 2.1rem 0;
+}
+
+#user main h3 {
+    margin: 0;
+}
+
+#user main ul {
+    text-align: center;
+    padding: 1rem;
+}
+
+#user main ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+}
+
+#user #dashboard main ul li {
+    height: 25vh;
+    margin: 1rem 0;
+    border-radius: 9px;
+}
+
+#user #module main ul li {
+    height: 3.6rem;
 }

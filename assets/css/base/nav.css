@@ -1,7 +1,7 @@
 @import '../base/variables.css';
 
 nav {
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 0.9rem;
     background-color: var(--black);
 }
 

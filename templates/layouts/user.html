@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
 
 {% block nav %}
-    {% include "components/user/_navbar.html" %}
+    <nav class="public" data-controller="navbar">
+        <div class="content">
+            <p>usuario</p>
+            
+            <button data-action="auth#logout">
+                terminar sessão
+            </button>
+        </div>
+    </nav>
 {% endblock %}
 
 {% block footer %}
-    {% include "components/user/_footer.html" %}
+    <footer class="public">
+        <small>© Copyrights 2026 NULL, All rights reserved.</small>
+    </footer>
 {% endblock %}
