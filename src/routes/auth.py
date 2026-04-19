@@ -15,7 +15,6 @@ def login(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/auth.html',
         context={
-            'request': request,
             'mode': 'login',
             'title': 'Iniciar Sessão'
         },
@@ -27,7 +26,6 @@ def register(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/auth.html',
         context={
-            'request': request,
             'mode': 'register',
             'title': 'Criar conta'
         },

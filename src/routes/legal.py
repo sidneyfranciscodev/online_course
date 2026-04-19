@@ -17,7 +17,6 @@ templates = Jinja2Templates(directory=TEMPLATES_DIR)
 def home(request: Request):
     return templates.TemplateResponse(
         name='pages/legal/terms.html',
-        context={'request': request},
         request=request
     )
 
@@ -30,7 +29,6 @@ def home(request: Request):
 def services(request: Request):
     return templates.TemplateResponse(
         name='pages/legal/privacy.html',
-        context={'request': request},
         request=request
     )
 
@@ -42,6 +40,5 @@ def services(request: Request):
 def cookies(request: Request):
     return templates.TemplateResponse(
         name='pages/legal/cookies.html',
-        context={'request': request},
         request=request
     )

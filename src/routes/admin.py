@@ -22,7 +22,6 @@ def dashboard(
 ) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/admin/dashboard.html',
-        context={'request': request,},
         request=request
     )
 
@@ -37,7 +36,6 @@ def users(
 ) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/admin/crud.html',
-        context={'request': request},
         request=request
     )
 
@@ -52,7 +50,6 @@ def modules(
 ) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/admin/crud.html',
-        context={'request': request},
         request=request
     )
 
@@ -67,7 +64,6 @@ def lessons(
 ) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/admin/crud.html',
-        context={'request': request},
         request=request
     )
 
@@ -82,6 +78,5 @@ def settings(
 ) -> HTMLResponse:
     return templates.TemplateResponse(
         name='pages/admin/settings.html',
-        context={'request': request},
         request=request
     )
