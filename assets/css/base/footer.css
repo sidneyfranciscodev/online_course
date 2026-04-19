@@ -8,7 +8,7 @@ footer.public {
 }
 
 footer.public a,
-footer.public p {
+footer.public small {
     color: var(--white);
 }
 

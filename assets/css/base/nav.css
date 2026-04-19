@@ -1,15 +1,28 @@
 @import '../base/variables.css';
 
 nav {
-    background-color: var(--light);
     padding: 0.6rem 1.2rem;
+    background-color: var(--black);
 }
 
 nav .content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav a { text-decoration: none; }
 
 nav h1 { margin: 0;}
+
+nav a,
+nav p,
+nav button {
+    color: var(--white);
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

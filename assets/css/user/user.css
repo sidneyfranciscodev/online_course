@@ -1,0 +1,13 @@
+@import '../base/variables.css';
+@import 'components/navbar.css';
+
+#user { min-height: 100dvh; }
+
+#user header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 25vh;
+    background-color: var(--light);
+}

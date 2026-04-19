@@ -1,5 +1,5 @@
 @import '../base/variables.css';
 
-#admin nav .content {
-    justify-content: space-between;
+#admin nav {
+    background-color: var(--light);
 }
